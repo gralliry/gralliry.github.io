@@ -1,3 +1,59 @@
 theme: jekyll-theme-cayman
 title: "Gralliry's Blog"
 description: "记录学习与生活"
+lang: zh-CN
+timezone: Asia/Shanghai
+
+url: "https://gralliry.github.io"
+baseurl: ""
+
+author:
+  name: Gralliry
+  avatar:
+  email:
+
+# 社交链接
+social:
+  github: gralliry
+
+# 文章链接格式
+permalink: /:year/:month/:day/:title/
+
+# 构建设置
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# 分页
+paginate: 10
+paginate_path: /page:num/
+
+# 排除文件
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .sass-cache
+  - .jekyll-cache
+
+# 插件
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+# feed 设置
+feed:
+  posts_limit: 20
+
+# SEO
+twitter:
+  username:
+  card: summary
+
+logo:
