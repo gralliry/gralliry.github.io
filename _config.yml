@@ -51,6 +51,8 @@ plugins:
 feed:
   posts_limit: 20
 
+show_downloads: false
+
 # SEO
 twitter:
   username:
