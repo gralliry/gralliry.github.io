@@ -3,29 +3,27 @@
 
 @import "{{ site.theme }}";
 
-/* ===== Navigation ===== */
 .site-nav {
   display: flex;
   gap: 1.5rem;
   margin-bottom: 2rem;
-  padding-bottom: 0.8rem;
-  border-bottom: 2px solid #333;
+  padding: 1rem 0;
+  border-bottom: 1px solid #33ff33;
 }
 
 .site-nav a {
   text-decoration: none;
   font-size: 0.9rem;
-  color: #666;
-  font-weight: 500;
+  color: #33ff33;
+  font-family: "Bitstream Vera Sans Mono", "Courier New", monospace;
   transition: color 0.2s;
 }
 
 .site-nav a:hover,
 .site-nav a.active {
-  color: #000;
+  color: #fff;
 }
 
-/* ===== Post Cards ===== */
 .posts {
   display: flex;
   flex-direction: column;
@@ -33,80 +31,54 @@
 }
 
 .post-card {
-  display: flex;
-  gap: 1.2rem;
-  padding: 1.2rem;
-  border: 1.5px solid #e0e0e0;
-  border-radius: 6px;
-  background: #fafafa;
-  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+  padding: 1rem;
+  border: 1px solid #33ff33;
+  transition: background 0.2s;
 }
 
 .post-card:hover {
-  border-color: #0366d6;
-  box-shadow: 0 2px 12px rgba(3, 102, 214, 0.1);
-  background: #fff;
+  background: rgba(51, 255, 51, 0.05);
 }
 
-/* Left column */
-.card-left {
-  flex-shrink: 0;
-  width: 110px;
-  text-align: right;
+.post-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.3rem;
+}
+
+.card-title {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.card-title a {
+  text-decoration: none;
+  color: #33ff33;
+}
+
+.card-title a:hover {
+  text-decoration: underline;
 }
 
 .card-date {
-  display: block;
-  font-size: 0.78rem;
-  color: #999;
-  font-family: "SF Mono", "Cascadia Code", "Fira Code", "Consolas", monospace;
-  margin-bottom: 0.4rem;
+  font-size: 0.75rem;
+  color: #b5e853;
+  font-family: "Bitstream Vera Sans Mono", "Courier New", monospace;
+  flex-shrink: 0;
+  margin-left: 1rem;
 }
 
 .card-meta {
   display: flex;
   flex-wrap: wrap;
   gap: 0.3rem;
-  justify-content: flex-end;
+  margin-top: 0.2rem;
 }
 
 .tag {
   font-size: 0.7rem;
-  color: #0366d6;
-  background: #e8f0fe;
-  padding: 0.1rem 0.4rem;
-  border-radius: 2px;
-  white-space: nowrap;
-}
-
-/* Right column */
-.card-right {
-  flex: 1;
-  min-width: 0;
-}
-
-.card-title {
-  margin: 0 0 0.3rem;
-  font-size: 1.05rem;
-  font-weight: 600;
-}
-
-.card-title a {
-  text-decoration: none;
-  color: #222;
-  transition: color 0.2s;
-}
-
-.card-title a:hover {
-  color: #0366d6;
-}
-
-.card-excerpt {
-  font-size: 0.88rem;
-  color: #666;
-  line-height: 1.6;
-}
-
-.card-excerpt p {
-  margin: 0;
+  color: #b5e853;
+  font-family: "Bitstream Vera Sans Mono", "Courier New", monospace;
 }
