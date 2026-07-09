@@ -4,7 +4,6 @@ date: 2023-11-25 00:00:00 +0800
 updated: 2025-10-02 00:00:00 +0800
 categories: [填词]
 tags: [分享]
-author: Aymeric Garcia
 ---
 
 过去遗失的回忆，

@@ -4,7 +4,6 @@ date: 2024-06-18 00:00:00 +0800
 updated: 2026-07-09 00:00:00 +0800
 categories: [技术]
 tags: [技术]
-author: Aymeric Garcia
 ---
 
 ## 💻主板
