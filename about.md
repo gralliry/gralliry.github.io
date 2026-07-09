@@ -3,8 +3,6 @@ layout: default
 title: 关于我
 ---
 
-{% include nav.html %}
-
 **关于小叶**
 
 小叶就是我啦，你当然可以这样称呼我，你也可以叫我小叶同学（这个会好听点）。
