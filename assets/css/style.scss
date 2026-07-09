@@ -43,3 +43,21 @@
 .read-more {
   font-size: 0.9rem;
 }
+
+.site-nav {
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.site-nav a {
+  margin-right: 1.2rem;
+  text-decoration: none;
+  font-size: 1rem;
+  color: #0366d6;
+}
+
+.site-nav a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #0366d6;
+}

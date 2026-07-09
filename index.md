@@ -3,6 +3,8 @@ layout: default
 title: 首页
 ---
 
+{% include nav.html %}
+
 {% for post in site.posts limit:10 %}
 <article class="post-item">
   <h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
