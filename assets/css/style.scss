@@ -3,17 +3,20 @@
 
 @import "{{ site.theme }}";
 
+/* ===== Navigation ===== */
 .site-nav {
   display: flex;
   gap: 1.5rem;
-  margin-bottom: 2.5rem;
-  padding: 1rem 0;
+  margin-bottom: 2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 2px solid #333;
 }
 
 .site-nav a {
   text-decoration: none;
   font-size: 0.9rem;
-  color: #555;
+  color: #666;
+  font-weight: 500;
   transition: color 0.2s;
 }
 
@@ -22,44 +25,88 @@
   color: #000;
 }
 
-.post-line {
-  margin-bottom: 2rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 1px solid #eee;
+/* ===== Post Cards ===== */
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
-.post-line time {
-  font-size: 0.8rem;
+.post-card {
+  display: flex;
+  gap: 1.2rem;
+  padding: 1.2rem;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 6px;
+  background: #fafafa;
+  transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+}
+
+.post-card:hover {
+  border-color: #0366d6;
+  box-shadow: 0 2px 12px rgba(3, 102, 214, 0.1);
+  background: #fff;
+}
+
+/* Left column */
+.card-left {
+  flex-shrink: 0;
+  width: 110px;
+  text-align: right;
+}
+
+.card-date {
+  display: block;
+  font-size: 0.78rem;
   color: #999;
-  font-family: "SF Mono", "Cascadia Code", "Fira Code", monospace;
+  font-family: "SF Mono", "Cascadia Code", "Fira Code", "Consolas", monospace;
+  margin-bottom: 0.4rem;
 }
 
-.post-line h2 {
-  margin: 0.2rem 0 0.3rem;
-  font-size: 1.1rem;
-  font-weight: 500;
+.card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  justify-content: flex-end;
 }
 
-.post-line h2 a {
+.tag {
+  font-size: 0.7rem;
+  color: #0366d6;
+  background: #e8f0fe;
+  padding: 0.1rem 0.4rem;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+/* Right column */
+.card-right {
+  flex: 1;
+  min-width: 0;
+}
+
+.card-title {
+  margin: 0 0 0.3rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.card-title a {
   text-decoration: none;
   color: #222;
   transition: color 0.2s;
 }
 
-.post-line h2 a:hover {
+.card-title a:hover {
   color: #0366d6;
 }
 
-.post-line-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.4rem;
+.card-excerpt {
+  font-size: 0.88rem;
+  color: #666;
+  line-height: 1.6;
 }
 
-.post-line-meta span {
-  font-size: 0.75rem;
-  color: #888;
-  background: #f5f5f5;
-  padding: 0.1rem 0.4rem;
-  border-radius: 2px;
+.card-excerpt p {
+  margin: 0;
 }
