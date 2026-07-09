@@ -1,4 +1,4 @@
-theme: jekyll-theme-cayman
+remote_theme: pages-themes/cayman@v0.2.0
 title: "Gralliry's Blog"
 description: "记录学习与生活"
 lang: zh-CN
@@ -26,10 +26,6 @@ kramdown:
   input: GFM
   syntax_highlighter: rouge
 
-# 分页
-paginate: 10
-paginate_path: /page:num/
-
 # 排除文件
 exclude:
   - README.md
@@ -42,10 +38,10 @@ exclude:
 
 # 插件
 plugins:
+  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jekyll-paginate
 
 # feed 设置
 feed:
